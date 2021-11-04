@@ -30,10 +30,16 @@
     		width:55px;
     		height:55px;
     		border-radius:50%;
-    		background: #00d3d3;
+    		background: linear-gradient(seashell 0%, darkslategray 100%, #fff 2%);
     		text-align: center;
     		line-height: 55px;
     		font-size: 36px;
+    		color : black;
+    	/* 	box-shadow: 2px 2px black; */
+    		
+    	}
+    	.lastnumber{
+    		margin: 3px;
     	}
     	table {
 		  border-collapse: separate;
@@ -44,7 +50,6 @@
     		width:35px;
     		height:35px;
     		border-radius:50%;
-    		background: #00d3d3;
     		text-align: center;
     		line-height: 35px;
     		font-size: 20px;
@@ -60,7 +65,6 @@
     		width:45px;
     		height:45px;
     		border-radius:50%;
-    		background: #00d3d3;
     		text-align: center;
     		line-height: 40px;
     		font-size: 30px;
@@ -166,7 +170,7 @@
 							<dd>
 								<table>
 									<tr>
-										<td colspan = "7"><h3 class = "heading">987th 당첨번호</h3></td>
+										<td colspan = "7"><h3 class = "navbar-brand" style ="font-size: 26px">987회차 당첨번호</h3></td>
 									</tr>
 									<tr>
 										<td><div class = "circle">3</div></td>
@@ -175,6 +179,7 @@
 										<td><div class = "circle">5</div></td>
 										<td><div class = "circle">4</div></td>
 										<td><div class = "circle">3</div></td>
+										<td><h2>+</h2></td>
 										<td><div class = "circle">2</div></td>										
 									</tr>
 								</table>
@@ -185,11 +190,19 @@
 	 	          <div class="heading-section-bold mb-4 mt-md-5">
 	          	<div class="ml-md-0">
 	          	<dl>
-	          	<dt></dt>
+	          	<dt><a class ="select" style="float: right;">회차 보기</a></dt>	          	
+	          	<br>
+	          	<dt style="float:right;"><select>
+	          		<option value ="986">986회</option>
+	          		<option value ="985">985회</option>
+	          		<option value ="984">984회</option>
+	          		<option value ="983">983회</option>
+	          	</select>
+	          	</dt>
 	          	<dd>
 	          	<table>
 	          	<tr>
-		        	<td colspan="7"><h2 class="mb-4" style ="font-size: 26px;">지난주 통계 추천 번호</h2></td>
+		        	<td colspan="7"><h2 class="navbar-brand" style ="font-size: 26px;">987회차 통계 추천 번호</h2></td>
 		        </tr>
 		        <tr>
 		        	<td></td>
@@ -201,34 +214,94 @@
 		        	<td></td>
 		        </tr>
 		        <tr>
-		        	<td><span>1st</span></td>
+		        	<td><span class ="navbar-brand">1순위 번호 : </span></td>
+		        	<td><div class = "circle lastnumber">3</div></td>
+					<td><div class = "circle lastnumber">7</div></td>
+					<td><div class = "circle lastnumber">6</div></td>
+					<td><div class = "circle lastnumber">5</div></td>
+					<td><div class = "circle lastnumber">4</div></td>
+					<td><div class = "circle lastnumber">3</div></td>
 		        </tr>
 		        <tr>
-		        	<td><span>2rd</span></td>
+		        	<td><span class ="navbar-brand">2순위 번호 : </span></td>
+		        	<td><div class = "circle lastnumber">3</div></td>
+					<td><div class = "circle lastnumber">7</div></td>
+					<td><div class = "circle lastnumber">6</div></td>
+					<td><div class = "circle lastnumber">5</div></td>
+					<td><div class = "circle lastnumber">4</div></td>
+					<td><div class = "circle lastnumber">3</div></td>
 		        </tr>
 		        <tr>
-		        	<td><span>3th</span></td>
+		        	<td><span class ="navbar-brand">3순위 번호 : </span></td>
+		        	<td><div class = "circle lastnumber">3</div></td>
+					<td><div class = "circle lastnumber">7</div></td>
+					<td><div class = "circle lastnumber">6</div></td>
+					<td><div class = "circle lastnumber">5</div></td>
+					<td><div class = "circle lastnumber">4</div></td>
+					<td><div class = "circle lastnumber">3</div></td>
 		        </tr>
 		        <tr>
-		        	<td><span>4th</span></td>
+		        	<td><span class ="navbar-brand">4순위 번호 : </span></td>
+		        	<td><div class = "circle lastnumber">3</div></td>
+					<td><div class = "circle lastnumber">7</div></td>
+					<td><div class = "circle lastnumber">6</div></td>
+					<td><div class = "circle lastnumber">5</div></td>
+					<td><div class = "circle lastnumber">4</div></td>
+					<td><div class = "circle lastnumber">3</div></td>
 		        </tr>
 		        <tr>
-		        	<td><span>5th</span></td>
+		        	<td><span class ="navbar-brand">5순위 번호 : </span></td>
+		        	<td><div class = "circle lastnumber">3</div></td>
+					<td><div class = "circle lastnumber">7</div></td>
+					<td><div class = "circle lastnumber">6</div></td>
+					<td><div class = "circle lastnumber">5</div></td>
+					<td><div class = "circle lastnumber">4</div></td>
+					<td><div class = "circle lastnumber">3</div></td>
 		        </tr>
 		        <tr>
-		        	<td><span>6th</span></td>
+		        	<td><span class ="navbar-brand">6순위 번호 : </span></td>
+		        	<td><div class = "circle lastnumber">3</div></td>
+					<td><div class = "circle lastnumber">7</div></td>
+					<td><div class = "circle lastnumber">6</div></td>
+					<td><div class = "circle lastnumber">5</div></td>
+					<td><div class = "circle lastnumber">4</div></td>
+					<td><div class = "circle lastnumber">3</div></td>
 		        </tr>
 		        <tr>
-		        	<td><span>7th</span></td>
+		        	<td><span class ="navbar-brand">7순위 번호 : </span></td>
+		        	<td><div class = "circle lastnumber">3</div></td>
+					<td><div class = "circle lastnumber">7</div></td>
+					<td><div class = "circle lastnumber">6</div></td>
+					<td><div class = "circle lastnumber">5</div></td>
+					<td><div class = "circle lastnumber">4</div></td>
+					<td><div class = "circle lastnumber">3</div></td>
 		        </tr>
 		        <tr>
-		        	<td><span>8th</span></td>
+		        	<td><a class ="navbar-brand">8순위 번호 : </a></td>
+		        	<td><div class = "circle lastnumber">3</div></td>
+					<td><div class = "circle lastnumber">7</div></td>
+					<td><div class = "circle lastnumber">6</div></td>
+					<td><div class = "circle lastnumber">5</div></td>
+					<td><div class = "circle lastnumber">4</div></td>
+					<td><div class = "circle lastnumber">3</div></td>
 		        </tr>
 		        <tr>
-		        	<td><span>9th</span></td>
+		        	<td><a class ="navbar-brand">9순위 번호 : </a></td>
+		        	<td><div class = "circle lastnumber">3</div></td>
+					<td><div class = "circle lastnumber">7</div></td>
+					<td><div class = "circle lastnumber">6</div></td>
+					<td><div class = "circle lastnumber">5</div></td>
+					<td><div class = "circle lastnumber">4</div></td>
+					<td><div class = "circle lastnumber">3</div></td>
 		        </tr>
 		        <tr>
-		        	<td><span>10th</span></td>
+		        	<td><a class ="navbar-brand">10순위 번호 : </a></td>
+		        	<td><div class = "circle lastnumber">3</div></td>
+					<td><div class = "circle lastnumber">7</div></td>
+					<td><div class = "circle lastnumber">6</div></td>
+					<td><div class = "circle lastnumber">5</div></td>
+					<td><div class = "circle lastnumber">4</div></td>
+					<td><div class = "circle lastnumber">3</div></td>
 		        </tr>
 		        
 	          	</table>
@@ -285,7 +358,7 @@
     	</div>
     </section> -->
 
-    <section class="ftco-section testimony-section">
+  <!--   <section class="ftco-section testimony-section">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section ftco-animate">
@@ -370,10 +443,10 @@
           </div>
         </div>
       </div>
-    </section>
-		<hr>
+    </section> -->
+<!-- 		<hr> -->
 
-		<section class="ftco-section-parallax">
+<!-- 		<section class="ftco-section-parallax">
       <div class="parallax-img d-flex align-items-center">
         <div class="container">
           <div class="row d-flex justify-content-center py-5">
@@ -393,7 +466,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <footer class="ftco-footer bg-light ftco-section">
       <div class="container">
       	<div class="row">
